@@ -1,5 +1,3 @@
-
-
 ## Introduction
 
 This is a historical currently API that converts CAD to other currencies based on historical exchange rates for a given date.
@@ -28,8 +26,7 @@ npm start
 ```
 #### 4. Access the API example
 ```
-curl 
-http://localhost:3000/api?date=2023-01-31&currency=U.S. dollar, daily average&amount_in_cad=100.1234
+curl http://localhost:3000/api?date=2023-01-31&currency=U.S. dollar, daily average&amount_in_cad=100.1234
 ```
 
 
