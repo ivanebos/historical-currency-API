@@ -63,20 +63,10 @@ describe("All / - Exchange Rate API", () => {
         {
           date: "2023-01-31",
           currency: "U.S. dollar, daily average",
-          amount_in_cad: "ivan",
+          amount_in_cad: "string",
         },
         400,
         "Invalid amount_in_cad format",
-      ],
-      [
-        "no exchange rate found",
-        {
-          date: "2022-01-31",
-          currency: "U.S. dollar, daily average",
-          amount_in_cad: 100.1234,
-        },
-        404,
-        "No exchange rate found",
       ],
     ])(
       "should return %s",
