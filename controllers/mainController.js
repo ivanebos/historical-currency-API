@@ -22,6 +22,8 @@ exports.getExtchangeRate = (req, res) => {
   }
 
   //***Parse the CSV file***
+
+  //Init variables
   let exchange_rate = null;
   let unsupportedCurrency = true;
 

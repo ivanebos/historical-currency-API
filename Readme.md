@@ -1,6 +1,6 @@
 ## Introduction
 
-This is a historical currently API that converts CAD to other currencies based on historical exchange rates for a given date.
+This is a historical currentcy API that converts CAD to other currencies based on historical exchange rates for a given date.
 
 This document will guide you through the setup and installation of the API, as well as the testing process.
 
@@ -12,7 +12,7 @@ This api is deployed and can be found here: https://historical-currency-api.onre
 #### 1. Clone the Repository:
 ```
 git clone https://github.com/ivanebos/historical-currency-API.git
-cd https://github.com/ivanebos/historical-currency-API
+cd historical-currency-API
 ```
 
 #### 2. Install Dependencies
@@ -49,7 +49,7 @@ Input:
     amount_in_cad: 100.1234,
 }
 ```
-Expected Output
+Expected Output:
 ```
 {
     Status: 200,
@@ -111,7 +111,7 @@ Expected Output:
 ```
 {
     Status: 400,
-    Text: "Invalid date format""
+    Text: "Invalid date format"
 }
 ```
 **Test Case 5:**
@@ -157,14 +157,12 @@ Code Coverage: 95%
 Passed test cases: 6
 ```
 
+## Future Improvements
 
+Caching
+- Implement caching for exchange_rate.cvs data to improve performance, especially if the data changes infrequently.
 
-
-
-
-
-
-
-
+Date Comparison
+- Improve code to support various date formats and ensure accurate matching with CSV data.
 
 
