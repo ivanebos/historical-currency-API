@@ -24,11 +24,22 @@ npm install
 ```
 npm start
 ```
-#### 4. Access the API example
-```
-curl http://localhost:3000/api?date=2023-01-31&currency=U.S. dollar, daily average&amount_in_cad=100.1234
-```
+#### 4. Using the API 
 
+To using the API, you can send an HTTP request to the following endpoints:
+- **Local**: http://localhost:3000/api (if running locally)
+- **Deployed**: https://historical-currency-api.onrender.com/api (if using deployed version)
+
+The API expects the following query parameters:
+- **date**: The date for which you want to retrieve data (e.g., "2023-01-21")
+- **currency**: The currency type you want to convert from (e.g., "U.S. dollar, daily average")
+- **amount_in_cad**: The amount in Canadian dollars (e.g., 100)
+
+
+Example:
+```
+curl "http://localhost:3000/api?date=2023-01-31&currency=U.S.%20dollar,%20daily%20average&amount_in_cad=100.1234"
+```
 
 ## Testing
 
