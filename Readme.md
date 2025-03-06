@@ -1,4 +1,4 @@
-## Introduction 
+## Inroduction 
 
 This is a historical currentcy API that converts CAD to other currencies based on historical exchange rates for a given date.
 
